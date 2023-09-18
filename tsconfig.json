@@ -25,8 +25,7 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-
   },
-  "include": ["@/components/ui", "src/components/ui/button.tsx", "src/components/ui/slider.tsx", "src/components/ui/label.tsx", "src/components/ui/select.tsx", "src/components/ui/separator.tsx", "src/components/ui/textarea.tsx"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
