@@ -5,10 +5,10 @@ import { Textarea } from "./textarea";
 import { Button } from "./button";
 import React, { ChangeEvent, FormEvent, useMemo, useRef, useState } from "react";
 import { getFFmpeg } from "../../lib/ffmpeg";
+
 import { fetchFile } from "@ffmpeg/util";
-import { blob } from "stream/consumers";
 import { api } from "../../lib/axios";
-import { type } from "os";
+
 
 type Status = 'waiting' | 'converting' | 'uploading' | 'generating' | 'success'
 
@@ -149,13 +149,17 @@ export function VideoInputForm() {
             </div>
 
             <Button disabled={status !== 'waiting'} type='submit' className='w-full'>
-            {status === 'waiting'? (
-                <>
-                  Carregar video
-                  <Upload className="w-4 h-4 ml-2" />
-                </>
-                ) : statusMessages[status]}
-            </Button>
+            {status === 'waiting' ? (
+                    <>
+                        Carregar vídeo
+                        <Upload className="w-4 h-4 ml-2" />
+                    </>
+                ) : (
+                    statusMessages[status]
+                )}
+            </Button> 
+
+            
           </form>
     )
 }
