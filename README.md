@@ -1,9 +1,5 @@
 # upload.ai - Geração de Texto com IA
 
-![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/seu-repositorio)
-![GitHub stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio)
-![GitHub forks](https://img.shields.io/github/forks/seu-usuario/seu-repositorio)
-
 ## Descrição
 
 O upload.ai é uma aplicação web que utiliza a inteligência artificial (IA) para gerar texto a partir de um prompt. Essa aplicação foi desenvolvida com amor durante o Next Level Week (NLW) da Rocketseat pela talentosa [Beatriz Oliveira Ferreira](https://www.linkedin.com/in/beatriz-oliveira-ferreira-720b49288/).
